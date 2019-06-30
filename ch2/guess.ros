@@ -1,0 +1,45 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+(progn ;;init forms
+  (ros:ensure-asdf)
+  ;;#+quicklisp(ql:quickload '() :silent t)
+  )
+
+(defpackage :ros.script.guess.3770914503
+  (:use :cl))
+(in-package :ros.script.guess.3770914503)
+
+(defparameter *small* 1)
+(defparameter *big* 100)
+
+(defun guess-number ()
+    (ash (+ *small* *big*) -1))
+
+(defun << ()
+    (setf *big* (1- (guess-number)))
+    (print (guess-number)))
+
+(defun >> ()
+    (setf *small* (1+ (guess-number)))
+    (print (guess-number)))
+  
+(defun start ()
+  (defparameter *small* 1)
+  (defparameter *big* 100)
+  (guess-number))
+
+(defun main (&rest argv)
+  (declare (ignorable argv))
+  (start)
+  (>>)
+  (<<)
+  (>>)
+  (>>)
+  (>>)
+  (>>)
+  (>>))
+
+;;; vim: set ft=lisp lisp:
