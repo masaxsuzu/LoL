@@ -1,17 +1,3 @@
-#!/bin/sh
-#|-*- mode:lisp -*-|#
-#|
-exec ros -Q -- $0 "$@"
-|#
-(progn ;;init forms
-  (ros:ensure-asdf)
-  ;;#+quicklisp(ql:quickload '() :silent t)
-  )
-
-(defpackage :ros.script.guess.3770914503
-  (:use :cl))
-(in-package :ros.script.guess.3770914503)
-
 (defparameter *small* 1)
 (defparameter *big* 100)
 
@@ -42,4 +28,4 @@ exec ros -Q -- $0 "$@"
   (>>)
   (>>))
 
-;;; vim: set ft=lisp lisp:
+(main)

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  common-lisp:
+    build: env
+    hostname: common-lisp
+    container_name: dev
+    volumes:
+      - .:/app
+    working_dir: /app
