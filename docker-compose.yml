@@ -5,5 +5,5 @@ services:
     hostname: common-lisp
     container_name: dev
     volumes:
-      - .:/app
+      - ./src:/app
     working_dir: /app
