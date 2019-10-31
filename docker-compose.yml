@@ -1,6 +1,6 @@
 version: '3'
 services:
-  common-lisp:
+  lol:
     build: env
     hostname: common-lisp
     container_name: dev
