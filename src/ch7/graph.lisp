@@ -84,5 +84,5 @@
         (funcall thunk))
     (ext:shell (concatenate 'string "dot -Tpng -O " fname)))
  
-(ugraph->png "uwizard.dot" *wizard-nodes* *wizard-edges*)
-(graph->png "wizard.dot" *wizard-nodes* *wizard-edges*)
+;; (ugraph->png "uwizard.dot" *wizard-nodes* *wizard-edges*)
+;; (graph->png "wizard.dot" *wizard-nodes* *wizard-edges*)
