@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="150" width="150">
+    <circle cx="50" cy="50" r="50" style="fill:rbg(255,0,0);stroke:rgb(155,0,0)"></circle>
+    <circle cx="100" cy="100" r="50" style="fill:rbg(0,0,255);stroke:rgb(0,0,155)"></circle>
+</svg>
