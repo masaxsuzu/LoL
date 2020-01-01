@@ -82,4 +82,4 @@
               (format t "<html>Nice to meet you, ~a!</html>" (cdr name)))))
       (princ "Sorry... I don't know that page.")))
 
-(serve #'hello-request-handler)
+;; (serve #'hello-request-handler)
